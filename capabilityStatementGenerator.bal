@@ -115,7 +115,7 @@ configurable config:Security security = ?;
             extension: []
         };
 
-        boolean? cors = security["security_cors"];
+        boolean? cors = security["cors"];
         if cors is boolean {
             restSecurity.cors = cors;
         } else {
