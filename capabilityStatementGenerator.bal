@@ -33,6 +33,12 @@ configurable config:Security security = ?;
         self.logHandler = new("CapabilityStatementGenerator");
         self.logHandler.Debug("Generating capability statement initialized");
         self.resourcePath = resourcePath;
+
+        json serverInfoConfig = server_info.toJson();
+        io:println(serverInfoConfig);
+
+        json securityCOnfig = security.toJson();
+        io:println(securityCOnfig);
     }
 
     # method to build capability statement from metadata configurables
