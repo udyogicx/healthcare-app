@@ -1,0 +1,11 @@
+[package]
+org = "wso2healthcare"
+name = "healthcare_app"
+version = "0.1.7"
+export = ["healthcare_app.config","healthcare_app.constants","healthcare_app.handlers","healthcare_app.models","healthcare_app.samples"]
+distribution = "2201.3.1"
+authors = ["WSO2 Healthcare"]
+keywords = ["Healthcare","FHIR","Metadata"]
+
+[build-options]
+observabilityIncluded = true
